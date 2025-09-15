@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret site</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        
+<div class="home-link">
+  <a href="/" class="home-button">← HOME</a>
+</div>
+
+<div class="album-title-left">
+  <h1>Barca</h1>
+</div>
+
+<div class="albums-grid">
+
+
+  
+  
+  
+  
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/cover.jpeg')">
+      <img src="/photos/barca/cover_hu_d9b4b230f19ea071.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+  
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/0_D1130847-FA11-4730-8A5A-17413288185B.jpeg')">
+      <img src="/photos/barca/0_D1130847-FA11-4730-8A5A-17413288185B_hu_1bc360dfe6c45c39.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/025704F5-B514-4D57-8ED6-02F60592CE63.jpeg')">
+      <img src="/photos/barca/025704F5-B514-4D57-8ED6-02F60592CE63_hu_93e7c1cab08e828.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/1_0343C80F-0A81-4142-B753-2EAB0ADE3559.jpeg')">
+      <img src="/photos/barca/1_0343C80F-0A81-4142-B753-2EAB0ADE3559_hu_cb1641e236744310.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/2_0C3F7FAF-B08B-4F6B-9A43-178ED987BD5C.jpeg')">
+      <img src="/photos/barca/2_0C3F7FAF-B08B-4F6B-9A43-178ED987BD5C_hu_2ce65b0f49891d23.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/643A01E7-51EE-4836-8432-E528CCCEFE73.jpeg')">
+      <img src="/photos/barca/643A01E7-51EE-4836-8432-E528CCCEFE73_hu_78108595fd9bc2a.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/A368C52C-FF4C-429F-85EC-2293583FBC24.jpeg')">
+      <img src="/photos/barca/A368C52C-FF4C-429F-85EC-2293583FBC24_hu_a6115e8827754990.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/B19C5088-7973-4AE7-B0BB-E567A75E77A2.jpeg')">
+      <img src="/photos/barca/B19C5088-7973-4AE7-B0BB-E567A75E77A2_hu_d59ccf66d1dc21a.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+    
+    <div class="album-image photo-item" onclick="openModal('\/photos\/barca\/BD2344BD-F574-4D27-AF81-6E6ECC081E46.jpeg')">
+      <img src="/photos/barca/BD2344BD-F574-4D27-AF81-6E6ECC081E46_hu_e0cb40cf62deea53.jpeg" alt="Barca" loading="lazy">
+    </div>
+  
+
+</div>
+
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img class="modal-content" id="modalImage" style="display: none;">
+</div>
+
+<script>
+function openModal(imageSrc) {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  
+  modal.style.display = 'block';
+  modalImg.style.display = 'none';
+  
+  
+  modalImg.src = '';
+  
+  
+  modalImg.onload = function() {
+    modalImg.style.display = 'block';
+  };
+  
+  modalImg.src = imageSrc;
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  
+  modal.style.display = 'none';
+  modalImg.src = '';
+  modalImg.style.display = 'none';
+}
+
+
+document.getElementById('imageModal').onclick = function(event) {
+  if (event.target === this) {
+    closeModal();
+  }
+}
+
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
+</script>
+
+    </main>
+    <footer class="site-footer"></footer>
+</body>
+</html>
