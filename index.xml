@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Secret site</title>
-    <link>pavilkau.github.io/secret_site/</link>
+    <link>https://pavilkau.github.io/secret_site/</link>
     <description>Recent content on Secret site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Sep 2025 23:32:24 +0200</lastBuildDate>
-    <atom:link href="pavilkau.github.io/secret_site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pavilkau.github.io/secret_site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Barca</title>
-      <link>pavilkau.github.io/secret_site/photos/barca/</link>
+      <link>https://pavilkau.github.io/secret_site/photos/barca/</link>
       <pubDate>Mon, 15 Sep 2025 23:32:24 +0200</pubDate>
-      <guid>pavilkau.github.io/secret_site/photos/barca/</guid>
+      <guid>https://pavilkau.github.io/secret_site/photos/barca/</guid>
       <description></description>
     </item>
     <item>
       <title>NYC</title>
-      <link>pavilkau.github.io/secret_site/photos/nyc/</link>
+      <link>https://pavilkau.github.io/secret_site/photos/nyc/</link>
       <pubDate>Mon, 15 Sep 2025 22:56:41 +0200</pubDate>
-      <guid>pavilkau.github.io/secret_site/photos/nyc/</guid>
+      <guid>https://pavilkau.github.io/secret_site/photos/nyc/</guid>
       <description></description>
     </item>
   </channel>
